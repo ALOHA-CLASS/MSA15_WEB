@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>부모 기준 가운데</title>
+  <link rel="stylesheet" href="css/부모기준정가운데.css">
+</head>
+<body>
+  <h1>position:absolute 정가운데</h1>
+  <div class="parent">
+    <div class="child">.child</div>
+  </div>
+  <p class="exp"><code>position: absolute; <br>top: 50%; <br>left: 50%; <br>transform: translate(-50%, -50%); <br></code> 조합은 요소의 자신의 크기를 고려해 정확한 수평/수직 중앙에 옵니다.</p>
+  <p class="exp">반드시 부모(.parent)에 <code>position: relative</code> 또는 다른 positioning 컨텍스트가 설정되어야 합니다.</p>
+</body>
+</html>

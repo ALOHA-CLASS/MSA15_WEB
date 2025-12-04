@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연습</title>
+</head>
+<body>
+  <input type="text" id="input">
+  <button id="button">입력</button>
+  <hr>
+  <div id="comment"></div>
+
+  <script>
+    const input = document.getElementById("input")
+    const btn = document.getElementById("button")
+    const comment = document.getElementById("comment")
+
+    btn.addEventListener("click", () => {
+      // alert( input.value )
+      const card = `
+        <div class="card">
+          <p>${ input.value }</p>
+        </div
+      `
+      comment.innerHTML += card
+    })
+  </script>
+</body>
+</html>
